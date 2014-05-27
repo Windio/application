@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Windio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="format-detection" content="telephone=no">
+        
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/ionicons.css">
+        <link rel="stylesheet" href="css/switchery.css">
+    </head>
+
+    <body class="body-settings">
+        
+        <header>
+            <button  onclick="window.location.href = 'index.html';" class="ion-ios7-arrow-back logout"></button>
+            <center>
+                <img class="header-logo" src="resources/images/logo.png">
+            </center>
+        </header>
+
+        <section class="settings">
+
+            <h3>Etat du ventilateur</h3>
+            <div class="group">
+                <div class="item">
+                    <div class="side">
+                        En fonctionnement
+                    </div>
+                    <div class="side">
+                        <label for="state" class="switch-checkbox">
+                            <input type="checkbox" id="state" name="state" />
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Vitesse du ventilateur</h3>
+            <div class="group">
+                <div class="item">
+                    <div class="side">
+                        Vitesse 1
+                    </div>
+                    <div class="side">
+                        <label for="vitesse-one" class="switch-checkbox">
+                            <input type="radio" name="speed" id="vitesse-one" data-value="1"/>
+                        </label>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="side">
+                        Vitesse 2
+                    </div>
+                    <div class="side">
+                        <label for="vitesse-two" class="switch-checkbox">
+                            <input type="radio" name="speed" class="active" id="vitesse-two" data-value="2" checked/>
+                        </label>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="side">
+                        Vitesse 3
+                    </div>
+                    <div class="side">
+                        <label for="vitesse-three" class="switch-checkbox">
+                            <input type="radio" name="speed" id="vitesse-three" data-value="3"/>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Position du ventilateur</h3>
+            <div class="group">
+                <div class="item">
+                    <div class="side">
+                        Rotation automatique
+                    </div>
+                    <div class="side">
+                        <label for="position" class="switch-checkbox">
+                            <input type="checkbox" name="position" id="position" data-value="0" />
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script type="text/javascript" src="library/framework/jquery.js"></script>
+        <script type="text/javascript" src="library/framework/fastclick.js"></script>
+        <script type="text/javascript" src="library/framework/switchery.js"></script>
+        <script type="text/javascript" src="library/app.js"></script>
+    </body>
+</html>

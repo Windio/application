@@ -1,0 +1,192 @@
+body
+{
+    background: #fff;
+    margin: 0;
+}
+
+.logo-container
+{
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: calc(60%);
+    opacity: 0.8;
+}
+
+.logo
+{
+    width: 150px;
+}
+
+.logo-container h1
+{
+    font-family: Helvetica Neue;
+    font-weight: 100;
+    font-style: italic;
+    color: white;
+    margin-top: 10px;
+    font-size: 30px;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+.login-buttons
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.login-buttons small
+{
+    font-size: 10px;
+}
+
+.login-buttons-login,
+.ip
+{
+    width: 100%;
+    font-family: Helvetica Neue;
+    font-weight: 101;
+    font-size: 15px;
+    height: 50px;
+    border: none;
+    outline: none;
+}
+
+.login-buttons-login
+{
+    background: #ee4e60;
+    color: white;
+}
+
+.ip
+{
+    background: #fff;
+    text-align: center;
+    color: #afaeac;
+    border-radius: 0;
+}
+
+.ip:focus
+{
+    color: #d0cfcc;
+}
+
+[id=login]
+{
+    background: url('../resources/images/login-background.png') fixed no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+@media only screen and (max-device-height: 480px)
+{
+    .logo-container
+    {
+        margin-top: calc(50%);
+    }
+}
+
+@media only screen and (min-device-height: 568px)
+{
+    .logo-container
+    {
+        margin-top: calc(60%);
+    }
+}
+
+header
+{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background: #ee4e60;
+    z-index: 2;
+}
+
+.header-logo
+{
+    width: 60px;
+    margin-top: 8px;
+}
+
+.logout
+{
+    outline: none;
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    border: 0;
+    background: transparent;
+    color: white;
+    font-size: 35px;
+    padding: 0;
+}
+
+.body-settings
+{
+    background: #efeff4;
+}
+
+.settings
+{
+    margin-top: 90px;
+}
+
+.settings h3
+{
+    text-transform: uppercase;
+    padding-left: 10px;
+    color: #6d6d72;
+    font-size: 15px;
+    font-family: HelveticaNeue-Light;
+    font-weight: normal;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+.settings .item
+{
+    font-size: 15px;
+    box-sizing: border-box;
+    font-family: HelveticaNeue-Light;
+    color: #232323;
+    width: 100%;
+    border-bottom: solid 1px #c8c7cc;
+    background: #fff;
+    padding: 10px;
+    display: -webkit-flex;
+}
+
+.settings .group .item:first-child
+{
+    border-top: solid 1px #c8c7cc;
+}
+
+.settings .item .side
+{
+    -webkit-flex: 1;
+}
+
+.settings .item .side:nth-child(1)
+{
+    padding-top: 5px;
+}
+
+.settings .item .side:nth-child(2)
+{
+    text-align: right;
+}
